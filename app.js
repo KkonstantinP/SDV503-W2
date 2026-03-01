@@ -1,3 +1,1 @@
-let a = 274273432423742n;
-let x = 32432427463274623467234n;
-console.log(a * x);
+console.log("hellow world")
