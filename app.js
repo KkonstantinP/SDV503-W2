@@ -12,3 +12,7 @@ let homeAdress = "Not my home adress"; // declared variable called homeAdress an
 
 let userAge = 19;    // declared variable userAge assigned it to 19 will change eventually to 20 when the user has a birthday
 console.log(userAge);
+
+let userInfo = [19, "Alice", "not my home adress"]; //declared variable userInfo and assigned it to an array with 3 values, the first value is a number, the second value is a string, and the third value is also a string
+
+console.log(typeof userInfo); 
