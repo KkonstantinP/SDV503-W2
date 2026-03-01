@@ -16,3 +16,24 @@ console.log(userAge);
 let userInfo = [19, "Alice", "not my home adress"]; //declared variable userInfo and assigned it to an array with 3 values, the first value is a number, the second value is a string, and the third value is also a string
 
 console.log(typeof userInfo); 
+console.log(userInfo);
+
+// Arithmetic
+5 + 3 //8    
+10 - 4 //6 
+4*3 // 12
+9 / 2 //4.5
+9 % 2  // 1  
+2 ** 3 // 8
+
+// Comparison - always prefer === over ==
+5 === 5 // true
+5 !== 3 // true (strict: checks type + value)
+5 == "5" // true loose
+5 === "5" // false scrict
+10 > 3 // true
+4 <= 4 // true
+
+/* == vs ===
+use === (strict equality) - checks both value and type. == performs type coercion causing subtle bugs. 
+Example. 0 == false is true, but 0 === false is false because 0 is a number and false is a boolean so it comes up with false.)
