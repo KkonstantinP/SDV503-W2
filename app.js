@@ -10,5 +10,5 @@ const Max = 100;
 
 let homeAdress = "Not my home adress"; // declared variable called homeAdress and assigned a string value to it of Not my own home adress
 
-let userAge = 19;
+let userAge = 19;    // declared variable userAge assigned it to 19 will change eventually to 20 when the user has a birthday
 console.log(userAge);
