@@ -36,4 +36,4 @@ console.log(userInfo);
 
 /* == vs ===
 use === (strict equality) - checks both value and type. == performs type coercion causing subtle bugs. 
-Example. 0 == false is true, but 0 === false is false because 0 is a number and false is a boolean so it comes up with false.)
+Example. 0 == false is true, but 0 === false is false because 0 is a number and false is a boolean so it comes up with false.) */
