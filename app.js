@@ -8,4 +8,7 @@ score =10;           // OK- reassignment allowed for let
 const Max = 100;
 // MAX = 200;        //type error: assisnment to constant variable
 
-let homeAdress = "Not my home adress" // declared variable called homeAdress and assigned a string value to it of Not my own home adress
+let homeAdress = "Not my home adress"; // declared variable called homeAdress and assigned a string value to it of Not my own home adress
+
+let userAge = 19;
+console.log(userAge);
