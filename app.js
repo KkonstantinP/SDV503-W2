@@ -3,7 +3,7 @@ let age = 25;        // Block-scoped, can be reassigned
 const PI = 3.14159;  //Block-scoped, cannot be reassigned
 
 let score = 0;
-score =10;           // OK- reassignment allowed for let
+score =10;           // OK - reassignment allowed for let
 
 const Max = 100;
 // MAX = 200;        //type error: assisnment to constant variable
@@ -37,3 +37,13 @@ console.log(userInfo);
 /* == vs ===
 use === (strict equality) - checks both value and type. == performs type coercion causing subtle bugs. 
 Example. 0 == false is true, but 0 === false is false because 0 is a number and false is a boolean so it comes up with false.) */
+
+if (name === "Alice") {
+    userIsLoggedIn = true;
+} else {
+    userIsLoggedIn = false;
+}
+
+if (userIsLoggedIn === true) {
+    console.log("Hello Alice!");
+}
