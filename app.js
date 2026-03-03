@@ -1,4 +1,4 @@
-var name = "Alice";  //Function-scoped, housted - aboid in modern JS
+/* var name = "Alice";  //Function-scoped, housted - aboid in modern JS
 let age = 25;        // Block-scoped, can be reassigned
 const PI = 3.14159;  //Block-scoped, cannot be reassigned
 
@@ -16,7 +16,7 @@ console.log(userAge);
 let userInfo = [19, "Alice", "not my home adress"]; //declared variable userInfo and assigned it to an array with 3 values, the first value is a number, the second value is a string, and the third value is also a string
 
 console.log(typeof userInfo); 
-console.log(userInfo);
+console.log(userInfo);  
 
 // Arithmetic
 5 + 3 //8    
@@ -37,7 +37,7 @@ console.log(userInfo);
 
 /*                                            == vs ===
 use === (strict equality) - checks both value and type. == performs type coercion causing subtle bugs. 
-Example. 0 == false is true, but 0 === false is false because 0 is a number and false is a boolean so it comes up with false.) */
+Example. 0 == false is true, but 0 === false is false because 0 is a number and false is a boolean so it comes up with false.) 
 
 if (name === "Alice") {             
     userIsLoggedIn = true;         //if name is equal to Alice is asignes the value true to the variable userIsLoggedIn
@@ -48,8 +48,8 @@ if (name === "Alice") {
 if (userIsLoggedIn === true) {     
     console.log("Hello " + name + "!");   // if the condition is true it will print Hello Alice! in the console
 }
-
-const msg = "Hello, Javascript!";
+*/
+const msg = "Hello, Javascript!"; 
 
 msg.length;                // 17
 msg.toUpperCase();         // "HELLO, JAVASCRIPT!"
@@ -61,3 +61,34 @@ msg.slice(7, 17);          // "JavaScript"
 msg.replace("Hello", "Hi") // "Hi, JavaScript!"
 msg.split(",");            // ["Hello", " JavaScript!"]
 " hi ".trim();             // "hi"
+
+console.log(msg.toUpperCase());
+ 
+console.log(msg.replace("Hello", "Hi"));
+
+const name = "Konstantin";
+const age = 25;
+
+// Old way - concatenation (error-prone)
+const msg1 = "Hello, " + name + "! You are " + age + " years old.";
+
+// New way - template literal (clean and readable)
+const msg2 = `Hello, ${name}! You are ${age} years old.`;
+
+console.log(msg1);
+console.log(msg2);
+
+// Multi-line strings 
+const html = `
+<div>
+    <h1>Welcome, ${name}!</h1>
+    <p>Your age is ${age}.</p>
+</div>
+`;
+console.log(html);
+
+//Any expression works inside ${}
+const total = `Price: ${(12.99 * 3).toFixed(2)}`; // "Price: $38.97"
+console.log(total); 
+
+console.log(`The length of the msg is ${msg.length}`);
