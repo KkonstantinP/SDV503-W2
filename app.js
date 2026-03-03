@@ -27,23 +27,37 @@ console.log(userInfo);
 2 ** 3 // 8
 
 // Comparison - always prefer === over ==
-5 === 5 // true
-5 !== 3 // true (strict: checks type + value)
-5 == "5" // true loose
-5 === "5" // false scrict
-10 > 3 // true
-4 <= 4 // true
 
-/* == vs ===
+5 === 5           // true
+5 !== 3           // true (strict: checks type + value)
+5 == "5"          // true loose
+5 === "5"         // false scrict
+10 > 3            // true
+4 <= 4            // true
+
+/*                                            == vs ===
 use === (strict equality) - checks both value and type. == performs type coercion causing subtle bugs. 
 Example. 0 == false is true, but 0 === false is false because 0 is a number and false is a boolean so it comes up with false.) */
 
-if (name === "Alice") {
-    userIsLoggedIn = true;
-} else {
-    userIsLoggedIn = false;
+if (name === "Alice") {             
+    userIsLoggedIn = true;         //if name is equal to Alice is asignes the value true to the variable userIsLoggedIn
+} else {                         
+    userIsLoggedIn = false;        // if the condition is false, it assigns the value false to the variable userIsLoggedIn
 }
 
-if (userIsLoggedIn === true) {
-    console.log("Hello Alice!");
+if (userIsLoggedIn === true) {     
+    console.log("Hello " + name + "!");   // if the condition is true it will print Hello Alice! in the console
 }
+
+const msg = "Hello, Javascript!";
+
+msg.length;                // 17
+msg.toUpperCase();         // "HELLO, JAVASCRIPT!"
+msg.toLowerCase();         // "hello, javascript!"
+msg.includes("Java");      // true
+msg.startsWith("He");      // true
+msg.indexOf("Java");       // 7
+msg.slice(7, 17);          // "JavaScript"
+msg.replace("Hello", "Hi") // "Hi, JavaScript!"
+msg.split(",");            // ["Hello", " JavaScript!"]
+" hi ".trim();             // "hi"
