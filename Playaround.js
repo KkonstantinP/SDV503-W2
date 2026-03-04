@@ -1,13 +1,7 @@
-const name = "Konstatin";
+const name = "Konstantin";
 switch (name) {
-    case "Alice":
-        console.log("Hello, Alice!");
-        break;
-    case "Bob":
-        console.log("Hello, Bob!");
-        break;
     case "Konstantin":
-        console.log("Hello, Konstantin!");
+        console.log(`Hello, ${name}!`);
         break;
     default:
         console.log("Unknown user");
