@@ -51,7 +51,7 @@ if (userIsLoggedIn === true) {
 */
 const msg = "Hello, Javascript!"; 
 
-msg.length;                // 17
+msg.length;                // 18
 msg.toUpperCase();         // "HELLO, JAVASCRIPT!"
 msg.toLowerCase();         // "hello, javascript!"
 msg.includes("Java");      // true
@@ -92,3 +92,32 @@ const total = `Price: ${(12.99 * 3).toFixed(2)}`; // "Price: $38.97"
 console.log(total); 
 
 console.log(`The length of the msg is ${msg.length}`);
+
+console.log(msg.length) 
+
+// if / else if / else
+    const score =75;
+if (score >= 90) {
+    console.log("A");
+} else if (score >= 80) {
+    console.log("B");
+} else if (score >= 70) {
+    console.log("C");
+} else {
+    console.log("below C");
+}
+
+//switch great for exact matches
+
+const day = "Monday";
+switch (day) {
+    case "Monday":
+    case "Tuesday":
+        console.log("Start of the week");
+        break;
+    case "Friday":
+        console.log("TGIF!");
+        break
+    default:
+        console.log("Midweek");
+}
