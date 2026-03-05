@@ -1,7 +1,7 @@
 const name = "Konstantin";
 switch (name) {
     case "Konstantin":
-        console.log(`Hello, ${name}!`);
+        console.log(`Hello, ${name}!\n-----------------------`);
         break;
     default:
         console.log("Unknown user");
@@ -9,6 +9,6 @@ switch (name) {
 
 let age = '19';
 let placeOfLiving = 'Nelson'
-let userinfo = [`${age}, ${placeOfLiving}, ${name}`];
+let userinfo = [`\nAge: ${age}, \nPlace of living: ${placeOfLiving},\nName: ${name}`];
 
-console.log('My userinfo isn\'t ' + userinfo);
+console.log('Your userinfo isn\'t: ' + userinfo);
